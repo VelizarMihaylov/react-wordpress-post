@@ -34,4 +34,4 @@ const ArticleComponent = () => <div>{reactWordpressPost(postContent)}</div>
 export default ArticleComponent
 ```
 
-React Wordpress Post will produce a default react component for each of the `blocks` used in your post.
+React Wordpress Post will produce a default react component for each of the `blocks` produced by the Gutenberg editor.
