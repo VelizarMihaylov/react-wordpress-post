@@ -35,3 +35,15 @@ export default ArticleComponent
 ```
 
 React Wordpress Post will produce a default react component for each of the `blocks` produced by the Gutenberg editor.
+
+### Installing
+
+Add the module to your dependencies using yarn
+
+```
+npm install react-wordpress-post --save
+```
+
+```
+yarn add react-wordpress-post
+```
