@@ -1,9 +1,9 @@
 # reat-wordpress-post
-Transform your Wordpress posts in to React components when using the Wordpress REST API
+Transform your Wordpress Posts in to React components when using the Wordpress REST API
 
 ### Motivation
 
-Wordpress is the most popular CMS. With the introduction of the (Wordpress REST API)[https://developer.wordpress.org/rest-api/] it became possible to use Wordpress in `headless` mode. A common use case is running Wordpress on the backend and using React (or some of the React implementations like Gatsby Js or Next.js) at the front end.
+Wordpress is the most popular CMS. With the introduction of the [Wordpress REST API](https://developer.wordpress.org/rest-api/) it became possible to use Wordpress in `headless` mode. A common use case is running Wordpress on the backend and using React (or some of the React implementations like Gatsby Js or Next.js) at the front end.
 
 You can easilly fetch the Wordpress Post content  from the `/posts` endpoint and feed it to React on the client. But there is one problem. Wordpress will send the post HTML as a string. To work around that in your component you need to do something like:
 
