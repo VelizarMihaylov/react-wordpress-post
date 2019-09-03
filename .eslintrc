@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "standard",
+    "standard-react",
+    "plugin:jest/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "emotion",
+    "jest"
+  ],
+  "rules": {
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 2,
+          "maxEOF": 1
+        }
+      ],
+      "prefer-const": [
+        "error",
+        {
+          "destructuring": "any",
+          "ignoreReadBeforeAssign": false
+        }
+      ],
+    "env": {
+      "jest/globals": true
+    },
+    "globals": {
+      "fetch": true,
+      "Headers": true
+    }
+  }
+}

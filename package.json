@@ -1,0 +1,60 @@
+{
+  "name": "react-wordpress-post",
+  "version": "1.0.0",
+  "description": "Transform your Wordpress Posts in to React components when using the Wordpress REST API",
+  "main": "index.js",
+  "scripts": {
+    "develop": "babel ./src --out-dir ./lib --watch",
+    "make": "rm -rf ./lib && babel ./src --out-dir ./lib --ignore '**/__tests__'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VelizarMihaylov/react-wordpress-post.git"
+  },
+  "keywords": [
+    "react",
+    "wordpress",
+    "javascript"
+  ],
+  "author": "Velizar Mihaylov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VelizarMihaylov/react-wordpress-post/issues"
+  },
+  "homepage": "https://github.com/VelizarMihaylov/react-wordpress-post#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@emotion/core": "^10.0.4",
+    "@emotion/styled": "^10.0.4",
+    "emotion-normalize": "^8.0.0",
+    "htmlparser2-20kb": "^3.10.1",
+    "react": "^16.6.3",
+    "uglify": "^0.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-notes": "^4.1.1",
+    "@storybook/react": "^4.1.1",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-emotion": "^10.0.5",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-emotion": "^10.0.14",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.9.0"
+  }
+}
