@@ -1,6 +1,6 @@
 {
   "name": "react-wordpress-post",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Transform your Wordpress Posts in to React components when using the Wordpress REST API",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "@emotion/styled": "^10.0.4",
     "emotion-normalize": "^10.1.0",
     "htmlparser2-20kb": "^3.10.1",
+    "lodash": "^4.17.15",
     "react": "^16.6.3"
   },
   "devDependencies": {
