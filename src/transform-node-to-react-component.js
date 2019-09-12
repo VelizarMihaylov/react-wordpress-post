@@ -2,6 +2,7 @@
 import { jsx } from '@emotion/core'
 
 import { Fragment } from 'react'
+import get from 'lodash/get'
 
 const transformNodeToReactComponent = (node) => {
   if (!node) return null
@@ -13,13 +14,13 @@ const transformNodeToReactComponent = (node) => {
     case 'blockquote':
       return {
         name: 'blockquote',
-        children: node.children[0].children[0].data
+        children: get(node, 'children[0].children[0].data', null)
       }
     /* ----------------- p ----------------- */
     case 'p':
       return {
         name: 'p',
-        children: node.children[0].data
+        children: get(node, 'children[0].data', null)
       }
     /* ----------------- figure----------------- */
     case 'figure':
@@ -62,7 +63,7 @@ const transformNodeToReactComponent = (node) => {
         }
       }
       /* ----------------- youtube embed----------------- */
-      if (node.name === 'figure' && node.attribs.class.includes('wp-block-embed-youtube')) {
+      if (node.attribs.class.includes('wp-block-embed-youtube')) {
         const {
           children: [{
             children: [
